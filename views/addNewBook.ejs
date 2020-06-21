@@ -19,8 +19,9 @@
     <div class="container marginTop marginBottomReduce minHeight mb-5" >
         <div class="row justify-content-center">
             <div class="col-md-12 col-8 " style="z-index: 100;">
-                
+              <form action="/addNewBook" method="POST" enctype="multipart/form-data" name="addNewBookForm" id="addNewBookForm"> 
                 <main>
+                  
                     <div class="stepper">
                       <div class="step--1 step-active">Step 1</div>
                       <div class="step--2">Step 2</div>
@@ -29,7 +30,8 @@
                       <div class="step--5">Step 5</div>
                       <div class="step--6">Finish</div> 
                     </div>
-                    <form class="form form-active">
+                
+                    <div class="form form-active">
                       <div class="form--header-container">
                         <h1 class="form--header-title">
                           Add New Book <i  class="fas fa-book"></i>
@@ -48,8 +50,8 @@
                       
                       
                       <button class="form__btn" id="btn-1">Next</button>
-                    </form>
-                    <form class="form">
+                    </div>
+                    <div class="form">
                       <div class="form--header-container">
                         <h1 class="form--header-title">
                             Add New Book <i  class="fas fa-book"></i>
@@ -69,8 +71,8 @@
                       
                       <button class="form__btn" id="btn-2-prev">Previous</button>
                       <button class="form__btn" id="btn-2-next">Next</button>
-                    </form>
-                    <form class="form">
+                    </div>
+                    <div class="form">
                       <div class="form--header-container">
                         <h1 class="form--header-title">
                             Add New Book <i  class="fas fa-book"></i>
@@ -92,8 +94,8 @@
                       
                       <button class="form__btn" id="btn-3-prev">Previous</button>
                       <button class="form__btn" id="btn-3-next">Next</button>
-                    </form>
-                    <form class="form">
+                    </div>
+                    <div class="form">
                       <div class="form--header-container">
                         <h1 class="form--header-title">
                             Add New Book <i  class="fas fa-book"></i>
@@ -114,8 +116,8 @@
                       
                       <button class="form__btn" id="btn-4-prev">Previous</button>
                       <button class="form__btn" id="btn-4-next">Next</button>
-                    </form>
-                    <form class="form">
+                    </div>
+                    <div class="form">
                       <div class="form--header-container">
                         <h1 class="form--header-title">
                             Add New Book <i  class="fas fa-book"></i>
@@ -135,11 +137,13 @@
                       
                       <button class="form__btn" id="btn-5-prev">Previous</button>
                       <button class="form__btn" id="signUpBtn">Add Book</button>
-                    </form>
+                    </div>
                     
                     <div class="form--message"></div>
+
+                  
                   </main>
-            
+                </form>
             </div>
 
         </div>
