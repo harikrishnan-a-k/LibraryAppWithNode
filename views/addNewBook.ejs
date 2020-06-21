@@ -19,7 +19,7 @@
     <div class="container marginTop marginBottomReduce minHeight mb-5" >
         <div class="row justify-content-center">
             <div class="col-md-12 col-8 " style="z-index: 100;">
-              <form action="/addNewBook" method="POST" enctype="multipart/form-data" name="addNewBookForm" id="addNewBookForm"> 
+              <form action="/books/addNewBook" method="POST" enctype="multipart/form-data" name="addNewBookForm" id="addNewBookForm"> 
                 <main>
                   
                     <div class="stepper">
@@ -44,7 +44,7 @@
                       <!-- <input type="text" placeholder="Username" /> -->
                       <label class="form-group has-float-label">
                         <div class="errorMsg hidden" id="bookNameError"></div>
-                        <input class="form-control" type="text" id="bookName" placeholder=" Book Name" required/>
+                        <input class="form-control" type="text" name="bookName" id="bookName" placeholder=" Book Name" required/>
                         <span class="pushRight">Book Name</span>
                       </label>
                       
@@ -65,7 +65,7 @@
                       
                       <label class="form-group has-float-label">
                         <div class="errorMsg hidden" id="authorError"></div>
-                        <input class="form-control" type="text" id="author" placeholder="Author" required/>
+                        <input class="form-control" type="text" id="author" name="author" placeholder="Author" required/>
                         <span class="pushRight">Author</span>
                       </label>
                       
@@ -85,7 +85,7 @@
               
                       <label class="form-group has-float-label">
                         <div class="errorMsg hidden" id="genreError"></div>
-                        <input class="form-control" type="text" id="genre" placeholder="Genre" required/>
+                        <input class="form-control" type="text" id="genre" name="genre" placeholder="Genre" required/>
                         <span class="pushRight">Genre</span>
                         
                       </label>
@@ -130,7 +130,7 @@
               
                       <label class="form-group has-float-label">
                         <div class="errorMsg hidden" id="aboutError"></div>
-                        <input class="form-control" type="text" id="about" placeholder="About" required/>
+                        <input class="form-control" type="text" id="about" name="about" placeholder="About" required/>
                         <span class="pushRight">About</span>
                       </label>
                       

@@ -17,7 +17,9 @@ app.use(express.static('public/images'));
 app.get('/',(req,res)=>{
     res.render('index');
 });
-
+app.get('/booksjson',(req,res)=>{
+    res.sendFile('./util/booksArray.json');
+})
 app.use('/logIn',loginRouter);
 app.use('/signUp',signupRouter);
 app.use('/books',booksRouter);
